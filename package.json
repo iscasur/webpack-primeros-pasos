@@ -4,13 +4,15 @@
   "description": "Esto será divertido",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --entry ./index.js --output ./bundle.js --mode development",
+    "build:local": "webpack --mode production",
+    "build:external": "webpack --config ./external/asdf.js"
   },
   "keywords": [
     "webpack"
   ],
   "author": "Israel Castro <israel.castro@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "webpack": "4.32.2",
     "webpack-cli": "^3.3.12"
